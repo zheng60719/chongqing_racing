@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lottery">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.racing.lottery.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--主界面-->
+        <activity
+            android:name="com.racing.lottery.Account1Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <!--今日号码-->
+        <activity
+            android:name="com.racing.lottery.TodayNumberActivity"
+            android:launchMode="singleTask"></activity>
+        <!--开奖直播-->
+        <activity
+            android:name="com.racing.lottery.LiveLotteryActivity"
+            android:launchMode="singleTask"></activity>
+        <!--历史开奖-->
+        <activity
+            android:name="com.racing.lottery.HistoryLotteryActivity"
+            android:launchMode="singleTask"></activity>
+        <!--pk10-->
+        <activity
+            android:name="com.racing.lottery.Pk10Activity"
+            android:launchMode="singleTask"></activity>
+        <!--历史分析-->
+        <activity
+            android:name="com.racing.lottery.HistoricalStatisticsActivity"
+            android:launchMode="singleTask"></activity>
+        <!--路珠走势-->
+        <activity
+            android:name="com.racing.lottery.TrendActivity"
+            android:launchMode="singleTask"></activity>
+        <!--冷热分析-->
+        <activity
+            android:name="com.racing.lottery.HotColdActivity"
+            android:launchMode="singleTask"></activity>
+        <!--免费参考-->
+        <activity
+            android:name="com.racing.lottery.ReferenceResourcesActivity"
+            android:launchMode="singleTask"></activity>
+        <!--我的资料-->
+        <activity
+            android:name="com.racing.lottery.MyDataActivity"
+            android:launchMode="singleTask"></activity>
+        <!--积分记录-->
+        <activity
+            android:name="com.racing.lottery.IntegralActivity"
+            android:launchMode="singleTask"></activity>
+        <!--我的收藏-->
+        <activity
+            android:name="com.racing.lottery.MyCollectionActivity"
+            android:launchMode="singleTask"></activity>
+        <!--我的关注-->
+        <activity
+            android:name="com.racing.lottery.MyFollowActivity"
+            android:launchMode="singleTask"></activity>
+        <!--登录界面-->
+        <activity
+            android:name="com.racing.lottery.LoginActivity"
+            android:launchMode="singleTask"></activity>
+        <!--注册-->
+        <activity
+            android:name="com.racing.lottery.RegisterActivity"
+            android:launchMode="singleTask"></activity>
+        <!--忘记密码-->
+        <activity
+            android:name="com.racing.lottery.FindPwdActivity"
+            android:launchMode="singleTask"></activity>
+        <!--修改备注-->
+        <activity
+            android:name="com.racing.lottery.UpdateBeiZhuActivity"
+            android:launchMode="singleTask"></activity>
+        <!--修改资料-->
+        <activity
+            android:name="com.racing.lottery.UpdateNmaeActivity"
+            android:launchMode="singleTask"></activity>
+        <!--修改头像-->
+        <activity
+            android:name="com.racing.lottery.UpdateTxActivity"
+            android:launchMode="singleTask"></activity>
+        <!--修改密码-->
+        <activity
+            android:name="com.racing.lottery.UpdatePwdActivity"
+            android:launchMode="singleTask"></activity>
+        <!--找回密码-->
+        <activity
+            android:name="com.racing.lottery.Find1PwdActivity"
+            android:launchMode="singleTask"></activity>
+        <!--我的关注-->
+        <activity
+            android:name="com.racing.lottery.FollowActivity"
+            android:launchMode="singleTask"></activity>
+        <!--我的站内信-->
+        <activity
+            android:name="com.racing.lottery.EmailActivity"
+            android:launchMode="singleTask"></activity>
+        <!--我的预测方案-->
+        <activity
+            android:name="com.racing.lottery.MyForecastActivity"
+            android:launchMode="singleTask"></activity>
+        <!--发布预测方案-->
+        <activity
+            android:name="com.racing.lottery.SendPredictionSchemeActivity"
+            android:launchMode="singleTask"></activity>
+        <!--专家列表-->
+        <activity
+            android:name="com.racing.lottery.ZhuanJiaActivity"
+            android:launchMode="singleTask"></activity>
+        <!--专家详情-->
+        <activity
+            android:name="com.racing.lottery.ZhuanJiaDetailActivity"
+            android:launchMode="singleTask"></activity>
+        <!--预测详情-->
+        <activity
+            android:name="com.racing.lottery.YuCeDetailActivity"
+            android:launchMode="singleTask"></activity>
+    </application>
+
+</manifest>

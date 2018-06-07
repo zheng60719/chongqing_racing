@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+    <include
+        layout="@layout/view_toolbar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:text="选择图片"/>
+
+    <ImageView
+        android:id="@+id/img_update_tx"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/iv_add_the_pic"/>
+    <Button
+        android:id="@+id/btn_update_tx"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_yzm"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:gravity="center"
+        android:text="修改头像"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

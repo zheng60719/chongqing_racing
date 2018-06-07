@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include
+        layout="@layout/view_toolbar"
+        />
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_height="96dp"
+        android:src="@mipmap/zm_phone"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="输入手机号"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:hint="请输入手机号"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/btn_xiayibu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:padding="12dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:text="下一步"
+        android:textSize="18sp"
+        android:background="@drawable/btn_yzm"
+        android:textColor="@color/white"/>
+</LinearLayout>

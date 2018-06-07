@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/darkgray"/>
+
+        <RadioGroup
+            android:id="@+id/rgBottomBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMain"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/selector_activity_tab_zhuye"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="首页"
+                android:textColor="@color/main_bottom_bar_textcolor_selector"
+                android:textSize="14.0sp"/>
+
+            <RadioButton
+                android:id="@+id/radioMy"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/selector_activity_tab_fenxi"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="专家分析"
+                android:textColor="@color/main_bottom_bar_textcolor_selector"
+                android:textSize="14.0sp"/>
+
+            <RadioButton
+                android:id="@+id/radioMore"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/selector_activity_tab_jihua"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="计划预测"
+                android:textColor="@color/main_bottom_bar_textcolor_selector"
+                android:textSize="14.0sp"/>
+            <RadioButton
+                android:id="@+id/radioMen"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:drawablePadding="3.0dip"
+                android:drawableTop="@drawable/selector_activity_tab_men"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="个人中心"
+                android:textColor="@color/main_bottom_bar_textcolor_selector"
+                android:textSize="14.0sp"/>
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

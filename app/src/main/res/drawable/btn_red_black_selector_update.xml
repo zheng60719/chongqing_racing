@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:state_checked = "true" android:state_enabled="true">
+
+        <shape>
+            <!-- 矩形的圆角弧度 -->
+            <corners android:radius="27dp" />
+            <stroke android:width="0.5dp" android:color="@color/red"></stroke>
+            <!-- 矩形的填充色 -->
+            <solid android:color="@color/red" />
+
+        </shape>
+
+    </item>
+
+    <item android:state_checked = "true" android:state_enabled="true">
+        <shape>
+            <!-- 矩形的圆角弧度 -->
+            <corners android:radius="27dp" />
+            <stroke android:width="0.5dp" android:color="@color/red"></stroke>
+            <!-- 矩形的填充色 -->
+            <solid android:color="@color/red" />
+
+        </shape>
+
+
+    </item>
+    <item android:state_checked = "false" android:state_enabled="false">
+        <shape>
+            <!-- 矩形的圆角弧度 -->
+            <corners android:radius="27dp" />
+            <stroke android:width="0.5dp" android:color="@color/red"></stroke>
+            <!-- 矩形的填充色 -->
+            <solid android:color="@color/red" />
+        </shape>
+
+    </item>
+</selector>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/view_toolbar"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_no_date"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/no_date_img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img"
+            android:text="您还没有关注"/>
+    </RelativeLayout>
+    <com.racing.widget.LoadMoreRecyclerView
+        android:id="@+id/recycler_follow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.racing.widget.LoadMoreRecyclerView>
+</LinearLayout>
